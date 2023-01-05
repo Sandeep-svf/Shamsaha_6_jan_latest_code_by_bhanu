@@ -1,0 +1,2 @@
+rootProject.name='Shamsaha'
+include ':app', ':drawerbehavior', ':chat-message-adapter'

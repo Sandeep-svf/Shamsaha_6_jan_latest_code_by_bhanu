@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "439982736415",
+    "project_id": "samshanew-3503b",
+    "storage_bucket": "samshanew-3503b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439982736415:android:13b306544c17bdd91d412a",
+        "android_client_info": {
+          "package_name": "com.shamsaha.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439982736415-u6ooh7f8nqn9lfclprd0175tsli0ocvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shamsaha.app",
+            "certificate_hash": "c9f6830b5796d96f1878765f083302e64e09e729"
+          }
+        },
+        {
+          "client_id": "439982736415-jhhk108ng3vj42bea1sj1qco08hg1dqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6OvfWXkr0JDWfrnT2-QMjSDvGZyvTgFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439982736415-jhhk108ng3vj42bea1sj1qco08hg1dqv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "439982736415-p7n9jjdcfaq28poeh91tqro0bof9uehd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.progektaApp.shamsaha",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

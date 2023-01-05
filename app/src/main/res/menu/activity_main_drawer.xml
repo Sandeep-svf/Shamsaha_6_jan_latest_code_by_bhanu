@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/AboutShamsaha"
+            android:title="@string/about_shamsaha" />
+
+        <!--        <item-->
+        <!--            android:id="@+id/who_we_are"-->
+        <!--            android:title="     Who We Are"-->
+        <!--            android:visible="false"-->
+        <!--            />-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/our_partners"-->
+        <!--            android:title="     Our Partners"-->
+        <!--            android:visible="false"/>-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/advocacy_board"-->
+        <!--            android:title="     Advocacy Board"-->
+        <!--            android:visible="false"/>-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/our_core_team"-->
+        <!--            android:title="     Our Core Team"-->
+        <!--            android:visible="false"/>-->
+
+        <item
+            android:id="@+id/Get_involved"
+            android:title="@string/get_involved" />
+        <item
+            android:id="@+id/Percountry"
+            android:title="@string/resources"/>
+
+        <item
+            android:id="@+id/Percountry1"
+            android:title="@string/per_country"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/Percountry2"
+            android:title="@string/survivor_support_tools"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/Events"
+            android:title="@string/events" />
+        <item
+            android:id="@+id/Contacts"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/CreatePIN"
+            android:title="@string/lock_app" />
+    </group>
+
+
+    <item
+        android:id="@+id/needHelpMenu"
+        app:actionLayout="@layout/menu_image_chat"
+
+        />
+
+    <item
+        android:id="@+id/VolunterLogin"
+        android:title="@string/volunteer_login" />
+
+    <item
+        android:id="@+id/termsConditions"
+        android:title="@string/terms_amp_conditions" />
+
+<!--    <item-->
+<!--        android:id="@+id/dfgds"-->
+<!--        android:title="" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/gfd"-->
+<!--        android:title="" />-->
+
+    <item
+        android:id="@+id/URL"
+        android:title="" />
+
+
+</menu>

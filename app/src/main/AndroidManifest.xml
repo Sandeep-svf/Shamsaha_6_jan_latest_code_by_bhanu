@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shamsaha.app">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name="com.shamsaha.app.activity.ChatHelper.Application.TwilioChatApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.CallFormActivity"
+            android:exported="false" />
+        <activity android:name="com.shamsaha.app.activity.volunteer.OutstandingRequests" />
+        <activity android:name="com.shamsaha.app.activity.volunteer.WebViewActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.CallHelper.videocall.VideoActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.CallHelper.videocall.VideoInviteActivity"
+            android:parentActivityName="com.shamsaha.app.activity.volunteer.onduty.DutyShiftActivity1"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.ChatCaseIdActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.ChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.ChatChanelListActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.event.EventPaymentActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.CallActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.VictemCallActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.ChatFormActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.onduty.DutyShiftActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.onduty.DutyShiftActivity1"
+            android:parentActivityName="com.shamsaha.app.activity.volunteer.VolunteerHome"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.Sponsor.CorpSponscerActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.ChangePasswordActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.AlertActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.Sponsor.PayMentActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.Resources.VolResourceContactsActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.general.PinActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.Resources.VolunterResourceActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.VolEvent.VolEventsActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.VolEvent.VolEventViewActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.ShiftRequestListActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.CaseReportActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.ChatCaseReportActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.UpcomingShiftActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.ShiftActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.VolunteerHome"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.EditProfileActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.ProfileActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.Resource.ResourceContactsActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.TCActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" /> <!-- <activity -->
+        <!-- android:name=".activity.PublicPart.event.EventFlyViewActivity" -->
+        <!-- android:screenOrientation="userPortrait" -->
+        <!-- tools:ignore="LockedOrientationActivity" /> -->
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.event.EventViewActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.event.eventsActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.Resource.resourcesActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.SurvivorSupportActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.Volunteering.googeFormActivity"
+            android:screenOrientation="userPortrait"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.WorkWithUs.workFormActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.WorkWithUs.workWithUsActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.Sponsor.sponsorMainActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.WorkWithUs.jobContact"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.Sponsor.sponsorshipActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.Volunteering.volunteeringActivity"
+            android:screenOrientation="userPortrait"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.GetInvolve.getInvolvedActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.About.aboutActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.contactsUsActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.general.CreatePinActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.Victem.client_contact_activity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.volunteer.loginActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shamsaha.app.activity.PublicPart.homeScreenActivity"
+            android:screenOrientation="userPortrait"
+            tools:ignore="LockedOrientationActivity" /> <!-- <service -->
+        <!-- android:name=".MyFirebaseInstanceIDService" -->
+        <!-- android:stopWithTask="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service
+            android:name="com.shamsaha.app.activity.CallHelper.IncomingCallNotificationService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ACTION_ACCEPT" />
+                <action android:name="ACTION_REJECT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.shamsaha.app.activity.CallHelper.fcm.VoiceFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.shamsaha.app.activity.CallHelper.videocall.RegistrationIntentService1"
+            android:exported="false" />
+        <service
+            android:name="com.shamsaha.app.activity.CallHelper.videocall.RegistrationIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.shamsaha.app.activity.CallHelper.fcm.RegistrationServiceVolunteer"
+            android:exported="false" />
+        <service
+            android:name="com.shamsaha.app.FCMListenerService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <queries> <package android:name="com.whatsapp" /> </queries>
+</manifest>

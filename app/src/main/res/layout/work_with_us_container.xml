@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F05A94">
+
+    <ImageView
+        android:id="@+id/handBurger3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handBurger3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/handBurger3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handBurger3"
+        app:srcCompat="@drawable/submit" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/work_with_us"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:backgroundTint="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/webViewContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:lineSpacingExtra="5dp">
+
+                </WebView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/data_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <!--        <ScrollView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:layout_marginTop="32dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:orientation="vertical">-->
+
+
+        <!--                <WebView-->
+        <!--                    android:id="@+id/webView"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginBottom="5dp"-->
+        <!--                    android:lineSpacingExtra="5dp" />-->
+
+        <!--                <androidx.recyclerview.widget.RecyclerView-->
+        <!--                    android:id="@+id/data_recycler"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content" />-->
+
+
+        <!--                &lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_margin="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginStart="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="15dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/JobTitle"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Job Title" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/type"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Internship"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginEnd="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/colorPink"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginRight="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/jobDate"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="25/04/2020" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginRight="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/jobData"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginTop="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:id="@+id/more_detail1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginStart="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginEnd="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginBottom="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:background="@drawable/btn_backgrount"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:backgroundTint="@color/colorPink"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:text="More Details"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAllCaps="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textColor="@color/colorWhite" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_margin="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginStart="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="15dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/JobTitle"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Job Title" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/type"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Job"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginEnd="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/colorPink"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginRight="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/jobDate"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="22/04/2020" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginRight="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/jobData"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginTop="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:id="@+id/more_detail2"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginStart="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginEnd="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginBottom="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:background="@drawable/btn_backgrount"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:backgroundTint="@color/colorPink"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:text="More Details"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAllCaps="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textColor="@color/colorWhite" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_margin="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginStart="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="15dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/JobTitle"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Job Title" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/type"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Internship"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginEnd="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/colorPink"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginRight="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/jobDate"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="22/04/2020" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAlignment="viewEnd"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginRight="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:id="@+id/jobData"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginTop="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:id="@+id/more_detail3"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginStart="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginTop="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginEnd="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginBottom="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:background="@drawable/btn_backgrount"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:backgroundTint="@color/colorPink"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:text="More Details"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textAllCaps="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textColor="@color/colorWhite" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+        <!--            </LinearLayout>-->
+        <!--        </ScrollView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="@color/colorPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/submit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

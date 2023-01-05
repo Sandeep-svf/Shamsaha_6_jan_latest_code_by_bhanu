@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F05A94"
+    tools:context="org.shamsaha.app.com.shamsaha.app.activity.PublicPart.GetInvolve.Volunteering.volunteeringActivity">
+
+    <ImageView
+        android:id="@+id/handBurger3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handBurger3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/handBurger3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handBurger3"
+        app:srcCompat="@drawable/submit" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/crisis_advocate"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundWhite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type">
+
+        <FrameLayout
+            android:id="@+id/webview_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <WebView
+                android:id="@+id/webViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </WebView>
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/webview_frame"
+            app:layout_constraintEnd_toEndOf="@+id/webview_frame"
+            app:layout_constraintStart_toStartOf="@+id/webview_frame"
+            app:layout_constraintTop_toTopOf="@+id/webview_frame" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="@color/colorPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/submit" />
+
+    <ImageView
+        android:id="@+id/sos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/sos" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/titleForm"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:fontFamily="@font/avenir_book"-->
+    <!--android:text="Shamsaha's Advocacy Training Application Form"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView6"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="4dp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:fontFamily="@font/avenir_book"-->
+    <!--android:text="All training days are mandatory:"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:text="First of all, thank you most sincerely for taking the time to complete this form and for expressing interest in becoming a Shamsaha advocate! This alone shows that you are a person who wants to make the world a better place and empower women. " />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView8"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:text="@string/if_you_are_selected_to_attend_this_training_you_will_learn_first_hand_how_to_provide_emotional_logistical_support_to_women_suffering_from_abuse_in_bahrain_through_our_helplines_training_topics_activities_will_include_but_are_not_limited_to_domestic_sexual_violence_in_depth_sub_conscious_bias_understanding_trauma_bahraini_laws_legislation_women_in_the_media_understanding_crisis_advocacy_and_its_protocols" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:text="To understand the responsibilities of an advocate, please read the details below very carefully. Finally, thank you kindly for understanding that due to the high volume of applicants and limited staffing at Shamsaha, if you do not meet the stated requirements in the form to complete the training and become an advocate, you will not be contacted further. " />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:text="To become an advocate, you must be:" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="A woman"-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Over 21 years old"-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Speak English and/or Arabic"-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Have a car/driver"-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Live in Bahrain"-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:textColor="#474B54"-->
+    <!--android:text="DETAILS OF ADVOCATE RESPONSIBILITIES:" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text='Commit to a minimum total of 24 volunteer hours per month. (Volunteer "on-duty" shifts are in 12-hour increments: Day shift is from 6 AM to 6 PM, Nightshift is from 6 PM to 6 AM the next morning. You are free to choose your shifts. This allows people who work during the day to take night time shifts.)'-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="@string/be_ready_to_be_on_call_on_the_mobile_helpline_during_your_shift_provide_telephone_as_well_as_in_person_support_to_any_client_at_any_of_the_approved_locations"-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Have reliable transportation and be willing to drive for at least 30 minutes during every shift. "-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Attend a minimum of 3 out of 4 continuing education advocate meetings held during the year, on Saturday afternoons each quarter. "-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Be available by telephone for a short debrief call with Shamsaha's staff, each day after completing your shift."-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginStart="32dp">-->
+
+    <!--<View-->
+    <!--    android:layout_width="20dp"-->
+    <!--    android:layout_height="20dp"-->
+    <!--    android:background="@drawable/circle" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:text="Be willing to complete all confidential paperwork or online forms. "-->
+    <!--    android:textColor="#474B54"-->
+    <!--    android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:text="******The training cost is BD35 per person.\n Understand this is a serious commitment and make sure to review the responsibilities above. We run a 24/7 helpline to support vulnerable women any hour of the day and require our advocates to take their monthly shifts seriously in order to provide this support.******"-->
+    <!--android:textColor="#474B54" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="14dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="14dp"-->
+    <!--android:text="@string/we_have_over_100_women_volunteers_join_this_network_of_socially_conscious_compassionate_group_of_women"-->
+    <!--android:textColor="#474B54" />-->

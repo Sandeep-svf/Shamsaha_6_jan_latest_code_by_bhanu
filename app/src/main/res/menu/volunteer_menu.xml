@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/profile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/myShift"
+            android:title="My Shifts"/>
+
+        <item
+            android:id="@+id/schedule"
+            android:title="Volunteer Calendar"/>
+
+        <item
+            android:id="@+id/shiftRequest"
+            android:title="Shift Swap Requests"/>
+
+        <item
+            android:id="@+id/services"
+            android:title="Client Services"/>
+
+        <item
+            android:id="@+id/help"
+            android:title="On-Duty Back-Up"/>
+
+        <item
+            android:id="@+id/languageSupport"
+            android:title="    Language Back-Up"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/backUpSupport"
+            android:title="    In-Person Back-Up"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/outstandingRequests"
+            android:title="Provide Back-Up"/>
+
+        <item
+            android:id="@+id/caseReport"
+            android:title="Case Report"/>
+
+        <item
+            android:id="@+id/resources"
+            android:title="Resources"/>
+
+        <item
+            android:id="@+id/events"
+            android:title="Events &amp; Media"/>
+
+    </group>
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"/>
+
+    <item
+        android:id="@+id/URL"
+        android:visible="false"
+        android:title="unisonoagency.com" />
+
+</menu>
