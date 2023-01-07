@@ -8,6 +8,7 @@ android {
     signingConfigs {
         debug {
            // storeFile file('C:\\AndroidStudioProjects\\shamsaha_android_app\\keystore.jks')
+            // need to place correct path ...
             storeFile file('F:\\Office Project\\Shamsaha\\Shamsaha_latest_code_6_jan_2022\\progekt-shamsaha_android_app-4b0119ad927f\\keystore.jks')
             storePassword '123456'
             keyAlias 'shamsaha_key'

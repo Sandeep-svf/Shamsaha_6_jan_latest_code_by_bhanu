@@ -1,5 +1,7 @@
 package com.shamsaha.app.activity.PublicPart;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -14,12 +16,17 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -56,6 +63,7 @@ public class contactsUsActivity extends AppCompatActivity
     //private static boolean menuStatus = true;
     public boolean isResourceClicked = false;
     boolean doubleBackToExitPressedOnce = false;
+    Dialog dialog;
     //private AdvanceDrawerLayout drawer;
     /*private ImageView handBurger, fbBtn, linkBtn, instaBtn, twitBtn, webBtn;
     private TextView emailTV, phoneNumber, address, phoneNumber2, tv_eng;
@@ -242,7 +250,14 @@ public class contactsUsActivity extends AppCompatActivity
 
         binding.contactContainer.whatsBtn.setOnClickListener(v ->
                 viewModel.getWeb().observe(this,s -> {
-                            // code......
+
+                    // pop up
+                    openDialog(contactsUsActivity.this);
+
+
+
+
+                           /* // code......
                             String contact = "+91 7042231040"; // use country code with your phone number
                             String url = "https://api.whatsapp.com/send?phone=" + contact;
                             try {
@@ -254,7 +269,7 @@ public class contactsUsActivity extends AppCompatActivity
                             } catch (PackageManager.NameNotFoundException e) {
                                 Toast.makeText(getApplicationContext(), "Whatsapp app not installed in your phone", Toast.LENGTH_SHORT).show();
                                 e.printStackTrace();
-                            }
+                            }*/
                         }
                 ));
 
@@ -331,6 +346,79 @@ public class contactsUsActivity extends AppCompatActivity
             binding.drawerLayout.closeDrawer(GravityCompat.START);
             createLanguageAlert();
         });
+    }
+
+    public void openDialog(Context context) {
+        dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+
+        dialog.setContentView(R.layout.whatsapp_helpline_number_popup);
+        ImageView i = dialog.findViewById(R.id.closeBtn2);
+        ProgressBar progressBar = dialog.findViewById(R.id.progressBar6);
+        TextView whatsapp_english = dialog.findViewById(R.id.whatsapp_english);
+        TextView whatsapp_arbic = dialog.findViewById(R.id.whatsapp_arbic);
+
+        whatsapp_english.setText("+97338447588");
+        whatsapp_arbic.setText("+97366710901");
+
+        whatsapp_english.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                String contact = whatsapp_english.getText().toString(); // use country code with your phone number
+                String url = "https://api.whatsapp.com/send?phone=" + contact;
+                try {
+                    PackageManager pm = getApplicationContext().getPackageManager();
+                    pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                } catch (PackageManager.NameNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), "Whatsapp app not installed in your phone", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
+
+        whatsapp_arbic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String contact = whatsapp_arbic.getText().toString(); // use country code with your phone number
+                String url = "https://api.whatsapp.com/send?phone=" + contact;
+                try {
+                    PackageManager pm = getApplicationContext().getPackageManager();
+                    pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                } catch (PackageManager.NameNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), "Whatsapp app not installed in your phone", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
+
+        progressBar.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(View.GONE);
+
+        //   hitApi(context,webView,progressBar);
+        i.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.show();
+        dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().getAttributes().windowAnimations = R.anim.fade_in;
     }
 
     private void createLanguageAlert() {

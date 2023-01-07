@@ -128,4 +128,7 @@
     <string name="live_call">اتصال مباشر</string>
     <string name="cellular_call">اتصال عبر الجوال</string>
     <string name="Im_not_sure">لست متأكدة</string>
+    <string name="wcci_helpline_number">رقم خط المساعدة WCCI</string>
+    <string name="arbic">عربي</string>
+    <string name="english2">إنجليزي</string>
 </resources>

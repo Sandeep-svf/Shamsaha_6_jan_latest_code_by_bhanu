@@ -25,6 +25,8 @@
 
 
     <string name="audio_device">Audio Device</string>
+    <string name="wcci_helpline_number">WCCI Helpline Number</string>
+    <string name="arbic">Arabic</string>
     <string name="callee">client identity or phone number</string>
     <string name="answer">Answer</string>
     <string name="decline">Decline</string>
@@ -63,6 +65,7 @@
     <string name="please_remember_the_case_id_for_future_use">Please remember the Case ID for future use</string>
     <string name="chat">Chat</string>
     <string name="english" translatable="false">English</string>
+    <string name="english2" >English</string>
     <string name="arabic" translatable="false">عربى</string>
     <string name="call">Call</string>
     <string name="other_language">Other Language</string>

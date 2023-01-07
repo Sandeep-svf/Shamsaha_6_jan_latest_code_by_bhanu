@@ -29,6 +29,8 @@ import retrofit2.Response;
 public class TermsCondition {
     Animation animFadein;
     Dialog dialog;
+
+
     public void openDialog(Context context) {
         dialog = new Dialog(context);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
