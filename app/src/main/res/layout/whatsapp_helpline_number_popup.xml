@@ -80,7 +80,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
 
-                    android:text="@string/english"
+                    android:text="@string/english2"
                     android:textColor="@color/colorGray"
                     android:textSize="18sp"
                     android:fontFamily="@font/swissra_normal"
